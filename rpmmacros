@@ -1,0 +1,8 @@
+%_topdir                %(/bin/echo $HOME)/rpm
+%_tmppath               %{_topdir}/tmp
+%_signature		gpg
+%_gpg_name		9819A8C4
+%packager		Colin Charles <colin@fedoraproject.org>
+#%_query_all_fmt %%{name}-%%{version}-%%{release}.%%{arch}
+%_query_all_fmt %%{name}-%%{version}-%%{release}.%|SOURCERPM?{%%{arch}.rpm}:{%%|ARCH?{src.rpm}:{pubkey}|}|
+%_smp_mflags -j3

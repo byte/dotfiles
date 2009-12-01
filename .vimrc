@@ -4,9 +4,9 @@ set ruler               " show the cursor position
 syntax on               " syntax highlighting
 set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
-set expandtab           " use spaces instead of tabs
-set tabstop=2
-set shiftwidth=2
+set expandtab           " use spaces instead of tabs (can also be set et)
+set tabstop=2           " can also be ts=2
+set shiftwidth=2        " can also be sw=2
 set textwidth=78
 set autoindent
 set smartindent
