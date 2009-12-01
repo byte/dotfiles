@@ -7,13 +7,15 @@ filetype plugin on      " use the file type plugins
 set expandtab           " use spaces instead of tabs (can also be set et)
 set tabstop=2           " can also be ts=2
 set shiftwidth=2        " can also be sw=2
-set textwidth=78
+set textwidth=76
 set autoindent
 set smartindent
 set smarttab            " make <tab> and <backspace> much smarter
 set showmatch           " show matching brackets
 set title               " let VIM change the title
 set titlestring=vim:\ %F    " format the title
+let &titleold=getcwd()
+set incsearch
 
 " shift key still on? map it so vim doesn't complain
 nmap :W :w
