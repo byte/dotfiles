@@ -1,0 +1,15 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias ls='ls -alFG --color'
+alias bc='bc -ql'
+alias pg='ps auxw|grep -i'
+alias df='df -Ph'
+alias du='du -sh'
+
+export PS1="\u@\h\w$ "
